@@ -29,8 +29,8 @@ const Checklist = () => {
     }
 
     const handleChangeTextArea = (e) => {
-        const {value} = e.target;
-        setCheckList({...checklist, textarea: value});
+        const { value } = e.target;
+        setCheckList({ ...checklist, textarea: value });
     }
 
     //Displays review component.
@@ -58,10 +58,11 @@ const Checklist = () => {
     return (
         <div className="flex center column form">
             <form onSubmit={(e) => review(e)} className={isReview ? styles.hide : styles.show}>
+                <h1>Student Progress Report</h1>
                 {mappedInputs}
                 <div className="textarea left">
                     <p className="font-weight">Goals, Achievements, Comments</p>
-                    <textarea name="textarea" onChange={(e)=>handleChangeTextArea(e)}>
+                    <textarea name="textarea" onChange={(e) => handleChangeTextArea(e)}>
                     </textarea>
                 </div>
                 <br />

@@ -64,6 +64,10 @@ button:active {
   background-color: rgba(117, 171, 59, 0.956);
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 .show {
   display: inline-block;
 }
