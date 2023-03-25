@@ -4,7 +4,13 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
-  background-color: rgba(117, 171, 59, 0.614);
+}
+
+textarea{
+  width: 100%;
+  height: 3rem;
+  border-radius: 15px;
+  border: 1px solid black;
 }
 
 li {
@@ -21,6 +27,10 @@ img {
 
 .App {
   text-align: center;
+}
+
+.font-weight{
+  font-weight: 750;
 }
 
 .home {
@@ -41,8 +51,13 @@ img {
 }
 
 button {
-  border-radius: 0%;
-  background-color: rgba(117, 171, 59, 0.614);
+  color: white;
+  font-weight: 750;
+  float: left;
+  border-radius: 15px;
+  width: 20%;
+  height: 30px;
+  background-color: rgb(0, 72, 254);
 }
 
 button:active {
@@ -90,10 +105,18 @@ button:active {
   width: 50%;
 }
 
+.white{
+  background-color: white;
+  border-radius: 15px;
+}
+
 .form {
   background-color: white;
   margin: 30px 30px;
   padding: 10px 20px;
+  background-image: url("https://wallpapercave.com/wp/wp3191315.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form > input {
@@ -112,7 +135,7 @@ button:active {
 
 @media screen and (min-width: 700px) {
   .form {
-    margin: 10px auto;
+    margin: 0px auto;
     max-width: 700px;
   }
 }
